@@ -1,0 +1,12 @@
+{
+  "extends": ["stylelint-config-standard-scss"],
+  "rules": {
+    "selector-class-pattern": null,
+    "value-keyword-case": [
+      "lower",
+      {
+        "ignoreKeywords": ["Helvetica Neue"]
+      }
+    ]
+  }
+}

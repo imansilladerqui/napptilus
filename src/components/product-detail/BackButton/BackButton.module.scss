@@ -1,0 +1,29 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--color-text);
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: var(--border-width-emphasis) solid var(--color-text);
+    outline-offset: var(--focus-ring-offset);
+  }
+}
+
+.label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-selector);
+  text-transform: uppercase;
+}
+
+.icon {
+  display: block;
+  width: var(--size-chevron-icon);
+  height: var(--size-chevron-icon);
+}

@@ -1,0 +1,60 @@
+@use "styles/media" as *;
+@use "styles/mixins" as *;
+
+.title {
+  @include section-title;
+
+  text-transform: uppercase;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+}
+
+.track {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  list-style: none;
+  border-top: var(--border-width-default) solid var(--color-border);
+  border-bottom: var(--border-width-default) solid var(--color-border);
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.slide {
+  flex: 0 0 var(--size-carousel-slide-sm);
+  min-width: 0;
+  border-left: var(--border-width-default) solid var(--color-border);
+  scroll-snap-align: start;
+
+  &:first-child {
+    border-left: none;
+  }
+
+  @include from-md {
+    flex-basis: var(--size-carousel-slide-md);
+  }
+}
+
+.progressTrack {
+  position: relative;
+  height: var(--size-carousel-progress-track-height);
+  margin-top: var(--spacing-control);
+  background: var(--color-border);
+}
+
+.progressThumb {
+  height: var(--size-carousel-progress-thumb-height);
+  margin-top: calc(-1 * var(--border-width-default) / 2);
+  background: var(--color-text);
+  transition: margin-left var(--transition-carousel-progress);
+}

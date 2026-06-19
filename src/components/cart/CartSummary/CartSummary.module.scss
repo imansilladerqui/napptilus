@@ -1,0 +1,88 @@
+@use "styles/media" as *;
+@use "styles/mixins" as *;
+
+.root {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: var(--spacing-sm);
+  width: 100%;
+  min-width: 0;
+
+  @include from-sm {
+    gap: var(--spacing-md);
+  }
+
+  @include from-md {
+    gap: var(--spacing-xl);
+  }
+}
+
+.colStart,
+.colCenter,
+.colEnd {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.colStart {
+  flex: 2 1 0;
+  justify-content: flex-start;
+
+  @include from-md {
+    flex: 0 0 var(--size-cart-summary-button-width);
+  }
+}
+
+.colCenter {
+  flex: 1.5 1 0;
+  justify-content: flex-end;
+
+  @include from-md {
+    flex: 1;
+  }
+}
+
+.colEnd {
+  flex: 1 0 auto;
+  justify-content: flex-end;
+
+  @include from-md {
+    flex: 0 0 var(--size-cart-summary-button-width);
+  }
+}
+
+.continue,
+.pay {
+  @include cart-summary-action-button;
+}
+
+.pay {
+  background: var(--color-button-primary);
+  border-color: var(--color-button-primary);
+}
+
+.total {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin: 0;
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-brand);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-selector);
+  letter-spacing: var(--letter-spacing-none);
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  @include from-sm {
+    gap: var(--spacing-md);
+    font-size: var(--font-size-sm);
+  }
+
+  @include from-md {
+    gap: var(--spacing-lg);
+    font-size: var(--font-size-selector-legend);
+  }
+}

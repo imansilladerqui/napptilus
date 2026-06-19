@@ -1,0 +1,22 @@
+.root {
+  padding: var(--spacing-section);
+  text-align: center;
+  border: var(--border-width-default) solid var(--color-border);
+  background: var(--color-background);
+}
+
+.title {
+  margin: 0 0 var(--spacing-sm);
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+}
+
+.message {
+  margin: 0;
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--color-text);
+}

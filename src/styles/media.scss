@@ -1,0 +1,19 @@
+@use "styles/tokens" as *;
+
+@mixin from-sm {
+  @media (width >= $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin from-md {
+  @media (width >= $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin from-lg {
+  @media (width >= $breakpoint-lg) {
+    @content;
+  }
+}

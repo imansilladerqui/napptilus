@@ -1,0 +1,42 @@
+@use "styles/mixins" as *;
+
+.root {
+  @include selector-block;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.option {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size-storage-option-width);
+  height: var(--size-storage-option-height);
+  padding: 0 var(--spacing-sm);
+  font-size: var(--font-size-selector-legend);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-selector);
+  text-transform: capitalize;
+  white-space: nowrap;
+  background: var(--color-background);
+  border: var(--border-width-default) solid var(--color-detail-option-border);
+
+  &:not(:first-child) {
+    margin-left: calc(-1 * var(--border-width-default));
+  }
+
+  &:focus-visible {
+    z-index: 1;
+    outline: var(--border-width-emphasis) solid var(--color-text);
+    outline-offset: var(--focus-ring-offset);
+  }
+}
+
+.selected {
+  z-index: 1;
+  border-color: var(--color-text);
+  border-width: var(--border-width-emphasis);
+}

@@ -1,0 +1,42 @@
+@mixin button-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-control) var(--spacing-lg);
+  border: var(--border-width-default) solid var(--color-text);
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-body);
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+
+  &:disabled {
+    opacity: var(--opacity-disabled);
+    cursor: not-allowed;
+  }
+
+  &:focus-visible {
+    outline: var(--border-width-emphasis) solid var(--color-text);
+    outline-offset: var(--focus-ring-offset);
+  }
+
+  &:hover:not(:disabled) {
+    opacity: var(--opacity-hover);
+  }
+}
+
+.primary {
+  @include button-base;
+
+  background: var(--color-text);
+  color: var(--color-background);
+}
+
+.secondary {
+  @include button-base;
+
+  background: var(--color-background);
+  color: var(--color-text);
+}

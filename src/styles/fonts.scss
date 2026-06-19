@@ -1,0 +1,17 @@
+// Helvetica Neue via local() system fonts.
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Helvetica Neue Light"), local("HelveticaNeue-Light");
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Helvetica Neue"), local("HelveticaNeue");
+}

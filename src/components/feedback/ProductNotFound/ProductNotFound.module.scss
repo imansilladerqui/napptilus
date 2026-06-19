@@ -1,0 +1,19 @@
+.root {
+  padding: var(--spacing-section);
+  text-align: center;
+}
+
+.title {
+  margin: 0 0 var(--spacing-sm);
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+}
+
+.message {
+  margin: 0 0 var(--spacing-lg);
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+}

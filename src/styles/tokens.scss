@@ -1,0 +1,106 @@
+// Sass source for globals.scss only — modules consume var(--*) and @use styles/media for breakpoints.
+
+// Colors
+$color-text: #000;
+$color-button-primary: #1b1a18;
+$color-text-muted: #737373;
+$color-text-placeholder: #a3a3a3;
+$color-background: #fff;
+$color-border: #e5e5e5;
+$color-border-active: #000;
+$color-error: #d32f2f;
+$color-detail-add-bar: #f2f2f2;
+$color-detail-add-text: #999;
+$color-detail-option-border: #ccc;
+
+// Spacing
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-control: 12px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 40px;
+$spacing-2xl: 48px;
+$spacing-section: $spacing-lg;
+$spacing-page-x: 16px;
+$spacing-page-x-desktop: 100px;
+$spacing-navbar-height: 56px;
+$spacing-card-image-padding: 16px;
+$spacing-card-body-padding-x: 8px;
+$spacing-card-body-padding-y: 10px;
+$spacing-card-info-gap: 2px;
+$spacing-card-padding: 16px;
+$spacing-search-input-padding-right: 36px;
+$spacing-search-clear-padding: 4px;
+$spacing-search-results-gap: 12px;
+$spacing-detail-root-margin-top: 110px;
+$spacing-detail-hero-gap: 64px;
+$spacing-detail-specs-gap: 154px;
+
+// Typography
+$font-family-sans: "Helvetica Neue", helvetica, arial, sans-serif;
+$font-size-brand: 10px;
+$font-size-sm: 12px;
+$font-size-body: 13px;
+$font-size-selector-legend: 14px;
+$font-size-base: 16px;
+$font-size-lg: 20px;
+$font-size-xl: 24px;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$line-height-compact: 1;
+$line-height-tight: 1.2;
+$line-height-body: 1.5;
+$line-height-selector: 100%;
+$line-height-cart-button: 16px;
+$letter-spacing-brand: 0.06em;
+$letter-spacing-cart-button: 0.08em;
+$letter-spacing-none: 0;
+
+// Layout
+$max-width-content: 1200px;
+$breakpoint-sm: 480px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+
+// Borders & sizes
+$border-width-default: 1px;
+$border-width-emphasis: 2px;
+$border-width-hairline: 0.5px;
+$border-width-search: 1px;
+$size-cart-item-width: 548px;
+$size-cart-item-image-width: 262px;
+$size-cart-item-height: 324px;
+$size-color-swatch-lg: 24px;
+$size-search-clear-icon: 14px;
+$size-chevron-icon: 12px;
+$size-card-image-scale: 80%;
+$size-detail-hero-max-height: 630px;
+$size-detail-info-max-width: 380px;
+$size-detail-info-max-height: 459px;
+$spacing-detail-info-margin-top: 85px;
+$size-storage-option-width: 95px;
+$size-storage-option-height: 65px;
+$size-detail-skeleton-min-height: 500px;
+$size-cart-footer-height: 120px;
+$size-cart-footer-height-mobile: 96px;
+$size-cart-summary-button-height-xs: 48px;
+$size-cart-summary-button-height-sm: 52px;
+$size-cart-summary-button-width: 260px;
+$size-cart-summary-button-height: 56px;
+$size-listing-skeleton-min-height: 400px;
+$size-carousel-slide-md: 25%;
+$size-carousel-progress-track-height: 1px;
+$size-carousel-progress-thumb-height: 2px;
+$size-color-swatch-ring-inner: 2px;
+$size-color-swatch-ring-outer: 4px;
+
+// Implementation
+$z-index-navbar: 50;
+$z-index-search: 49;
+$opacity-disabled: 0.5;
+$opacity-hover: 0.85;
+$focus-ring-offset: 2px;
+$transition-fast: 150ms ease;
+$transition-carousel-progress: 120ms ease;

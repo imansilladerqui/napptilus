@@ -1,0 +1,21 @@
+@use "styles/media" as *;
+@use "styles/mixins" as *;
+
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2xl);
+}
+
+.content {
+  @include page-margin-inline;
+}
+
+.skeleton {
+  min-height: var(--size-listing-skeleton-min-height);
+  background: var(--color-background);
+}
+
+.loadMore {
+  height: 1px;
+}

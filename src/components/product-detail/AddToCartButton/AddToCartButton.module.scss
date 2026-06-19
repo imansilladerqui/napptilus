@@ -1,0 +1,20 @@
+.button {
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.buttonDisabled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: var(--spacing-control) var(--spacing-lg);
+  border: none;
+  background: transparent;
+  color: var(--color-detail-add-text);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-body);
+  text-transform: uppercase;
+  cursor: not-allowed;
+}

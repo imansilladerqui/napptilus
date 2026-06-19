@@ -1,0 +1,17 @@
+@use "styles/media" as *;
+@use "styles/mixins" as *;
+
+.root {
+  padding-block: var(--spacing-section);
+
+  @include page-margin-inline;
+}
+
+.back {
+  margin-bottom: var(--spacing-md);
+}
+
+.skeleton {
+  min-height: var(--size-detail-skeleton-min-height);
+  background: var(--color-background);
+}

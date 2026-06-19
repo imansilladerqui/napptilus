@@ -1,0 +1,27 @@
+@use "styles/media" as *;
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: var(--border-width-hairline) solid var(--color-border);
+  border-left: var(--border-width-hairline) solid var(--color-border);
+
+  @include from-sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include from-md {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include from-lg {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.item {
+  min-width: 0;
+}

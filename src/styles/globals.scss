@@ -1,0 +1,121 @@
+@use "styles/fonts";
+@use "styles/tokens" as *;
+
+:root {
+  --color-text: #{$color-text};
+  --color-button-primary: #{$color-button-primary};
+  --color-text-muted: #{$color-text-muted};
+  --color-text-placeholder: #{$color-text-placeholder};
+  --color-background: #{$color-background};
+  --color-border: #{$color-border};
+  --color-border-active: #{$color-border-active};
+  --color-error: #{$color-error};
+  --color-detail-add-bar: #{$color-detail-add-bar};
+  --color-detail-add-text: #{$color-detail-add-text};
+  --color-detail-option-border: #{$color-detail-option-border};
+  --spacing-xs: #{$spacing-xs};
+  --spacing-sm: #{$spacing-sm};
+  --spacing-control: #{$spacing-control};
+  --spacing-md: #{$spacing-md};
+  --spacing-lg: #{$spacing-lg};
+  --spacing-xl: #{$spacing-xl};
+  --spacing-2xl: #{$spacing-2xl};
+  --spacing-section: #{$spacing-section};
+  --spacing-page-x: #{$spacing-page-x};
+  --spacing-page-x-desktop: #{$spacing-page-x-desktop};
+  --spacing-navbar-height: #{$spacing-navbar-height};
+  --spacing-card-image-padding: #{$spacing-card-image-padding};
+  --spacing-card-body-padding-x: #{$spacing-card-body-padding-x};
+  --spacing-card-body-padding-y: #{$spacing-card-body-padding-y};
+  --spacing-card-info-gap: #{$spacing-card-info-gap};
+  --spacing-card-padding: #{$spacing-card-padding};
+  --spacing-search-input-padding-right: #{$spacing-search-input-padding-right};
+  --spacing-search-clear-padding: #{$spacing-search-clear-padding};
+  --spacing-search-results-gap: #{$spacing-search-results-gap};
+  --spacing-detail-root-margin-top: #{$spacing-detail-root-margin-top};
+  --spacing-detail-hero-gap: #{$spacing-detail-hero-gap};
+  --spacing-detail-specs-gap: #{$spacing-detail-specs-gap};
+  --font-family-sans: #{$font-family-sans};
+  --font-size-brand: #{$font-size-brand};
+  --font-size-sm: #{$font-size-sm};
+  --font-size-body: #{$font-size-body};
+  --font-size-selector-legend: #{$font-size-selector-legend};
+  --font-size-base: #{$font-size-base};
+  --font-size-lg: #{$font-size-lg};
+  --font-size-xl: #{$font-size-xl};
+  --font-weight-light: #{$font-weight-light};
+  --font-weight-normal: #{$font-weight-normal};
+  --font-weight-bold: #{$font-weight-bold};
+  --line-height-compact: #{$line-height-compact};
+  --line-height-tight: #{$line-height-tight};
+  --line-height-body: #{$line-height-body};
+  --line-height-selector: #{$line-height-selector};
+  --line-height-cart-button: #{$line-height-cart-button};
+  --letter-spacing-brand: #{$letter-spacing-brand};
+  --letter-spacing-cart-button: #{$letter-spacing-cart-button};
+  --letter-spacing-none: #{$letter-spacing-none};
+  --max-width-content: #{$max-width-content};
+  --border-width-default: #{$border-width-default};
+  --border-width-emphasis: #{$border-width-emphasis};
+  --border-width-hairline: #{$border-width-hairline};
+  --border-width-search: #{$border-width-search};
+  --size-cart-item-width: #{$size-cart-item-width};
+  --size-cart-item-image-width: #{$size-cart-item-image-width};
+  --size-cart-item-height: #{$size-cart-item-height};
+  --size-color-swatch-lg: #{$size-color-swatch-lg};
+  --size-search-clear-icon: #{$size-search-clear-icon};
+  --size-chevron-icon: #{$size-chevron-icon};
+  --size-card-image-scale: #{$size-card-image-scale};
+  --size-detail-hero-max-height: #{$size-detail-hero-max-height};
+  --size-detail-info-max-width: #{$size-detail-info-max-width};
+  --size-detail-info-max-height: #{$size-detail-info-max-height};
+  --spacing-detail-info-margin-top: #{$spacing-detail-info-margin-top};
+  --size-storage-option-width: #{$size-storage-option-width};
+  --size-storage-option-height: #{$size-storage-option-height};
+  --size-detail-skeleton-min-height: #{$size-detail-skeleton-min-height};
+  --size-cart-footer-height: #{$size-cart-footer-height};
+  --size-cart-footer-height-mobile: #{$size-cart-footer-height-mobile};
+  --size-cart-summary-button-height-xs: #{$size-cart-summary-button-height-xs};
+  --size-cart-summary-button-height-sm: #{$size-cart-summary-button-height-sm};
+  --size-cart-summary-button-width: #{$size-cart-summary-button-width};
+  --size-cart-summary-button-height: #{$size-cart-summary-button-height};
+  --size-listing-skeleton-min-height: #{$size-listing-skeleton-min-height};
+  --size-carousel-slide-sm: calc(50% - var(--spacing-control) / 2);
+  --size-carousel-slide-md: #{$size-carousel-slide-md};
+  --size-carousel-progress-track-height: #{$size-carousel-progress-track-height};
+  --size-carousel-progress-thumb-height: #{$size-carousel-progress-thumb-height};
+  --size-color-swatch-ring-inner: #{$size-color-swatch-ring-inner};
+  --size-color-swatch-ring-outer: #{$size-color-swatch-ring-outer};
+  --z-index-navbar: #{$z-index-navbar};
+  --z-index-search: #{$z-index-search};
+  --opacity-disabled: #{$opacity-disabled};
+  --opacity-hover: #{$opacity-hover};
+  --focus-ring-offset: #{$focus-ring-offset};
+  --transition-fast: #{$transition-fast};
+  --transition-carousel-progress: #{$transition-carousel-progress};
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-family-sans);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+main {
+  min-height: calc(100vh - var(--spacing-navbar-height));
+}
