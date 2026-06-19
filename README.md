@@ -19,7 +19,7 @@ Next.js 15 frontend with server-side API proxying, TanStack Query for remote sta
 
 ## Requirements
 
-- **Node.js 18.x** (see `.nvmrc`)
+- **Node.js 22.x** (see `.nvmrc`)
 - **pnpm 9** — use `pnpm install --frozen-lockfile` in CI and production
 
 ```bash
