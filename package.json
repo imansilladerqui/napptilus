@@ -16,6 +16,7 @@
     "format:check": "prettier --check .",
     "test": "VITE_CJS_IGNORE_WARNING=true vitest run",
     "test:watch": "VITE_CJS_IGNORE_WARNING=true vitest",
+    "lint-staged": "lint-staged",
     "prepare": "husky"
   },
   "dependencies": {
